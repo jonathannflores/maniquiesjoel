@@ -1,9 +1,10 @@
+import ImageSlider from "../components/ImageSlider"
 import Navbar from "../components/Navbar"
 
 function Home(){
     return <>
     <Navbar/>
-    <h1>HOME</h1>
+    <ImageSlider />
 
     </>
 }

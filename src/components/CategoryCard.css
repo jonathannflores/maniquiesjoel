@@ -1,0 +1,62 @@
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; 
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+
+}
+
+.category-card {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.button {
+  position: relative;
+  z-index: 2;
+}
+
+.button button {
+  padding: 10px;
+  background-color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button button:hover {
+  transform: scale(1.1); 
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media screen and (max-width: 768px){
+  .category-card{
+    height: 300px;
+  }
+}
